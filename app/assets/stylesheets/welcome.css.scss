@@ -1,0 +1,69 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-color: #662d91;
+$body-bg: #ddd;
+
+$paragraph-padding: 10px;
+$a-color: #008cba;
+$a-decoration: underline;
+$a-visit: 5px;
+$a-margin: 0px;
+
+
+$input-margin: 2em 0 1em 40em;
+$input-color: #662d91;
+
+$table-width: 800px;
+$table-margin: auto;
+
+$posts-list-margin: 30px;
+
+body {
+  background: $body-bg;
+}
+h1 {
+  color: $primary-color;
+  padding: $paragraph-padding;
+}
+p {
+  padding: $paragraph-padding;
+}
+a.welcome, a {
+  text-decoration: $a-decoration;
+  color: $a-color;
+  padding: $a-visit;
+  margin: $a-margin;
+}
+a.welcome:visited, a:visited {
+  color: $a-color;
+  padding: $a-visit;
+}
+a.welcome:hover, a:hover {
+  background: transparent;
+  color: #2e3192;
+  padding: $a-visit;
+}
+input[type=submit] {
+  margin: $input-margin;
+  background: $input-color;
+  color: #fff;
+  padding: .7em;
+}
+input[type=submit]:hover {
+  background: #a864a8;
+}
+table {
+  max-width: $table-width;
+  margin: $table-margin;
+}
+th {
+  text-align: left;
+}
+td {
+  padding: 10px;
+}
+.posts-list{
+  margin: 0 0 0 280px;
+}
