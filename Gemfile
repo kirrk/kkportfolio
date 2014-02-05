@@ -7,10 +7,9 @@ ruby '2.0.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "bundler"
 
+gem "pg"
+
 gem "minitest-rails"
-
-gem "sqlite3"
-
 
 group :test do
   gem "minitest-rails-capybara"
@@ -27,18 +26,18 @@ end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 group :development do
-  gem "sqlite3"
+  #gem "sqlite3"
+  gem 'pg'
 end
 
-#group :doc do
- # gem "sdoc", require: false
-#end
+group :doc do
+  gem "sdoc", require: false
+end
 
 #group :production do
  # gem "rails_12factor"
   #gem "pg"
 #end
-
 
 
 gem 'jquery-rails'
