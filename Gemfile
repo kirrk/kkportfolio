@@ -26,8 +26,7 @@ end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 group :development do
-  #gem "sqlite3"
-  gem 'pg'
+  gem "sqlite3"
 end
 
 group :doc do
