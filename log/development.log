@@ -22002,3 +22002,61 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-05 09:54:48
 Served asset /application.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-02-05 10:46:40 -0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8.1ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /layout.css - 200 OK (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /welcome.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /vendor/modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /posts.js - 200 OK (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
+Served asset /application.js - 304 Not Modified (0ms)
