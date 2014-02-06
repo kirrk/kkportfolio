@@ -22060,3 +22060,104 @@ Served asset /welcome.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-05 10:46:41 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-05 17:05:32 -0800
+Connecting to database specified by database.yml
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Compiled foundation_and_overrides.css  (1738ms)  (pid 4257)
+Compiled layout.css  (1ms)  (pid 4257)
+Compiled posts.css  (0ms)  (pid 4257)
+Compiled scaffolds.css  (5ms)  (pid 4257)
+Compiled welcome.css  (4ms)  (pid 4257)
+Compiled application.css  (1764ms)  (pid 4257)
+Compiled vendor/modernizr.js  (2ms)  (pid 4257)
+Compiled jquery.js  (3ms)  (pid 4257)
+Compiled jquery_ujs.js  (0ms)  (pid 4257)
+Compiled posts.js  (163ms)  (pid 4257)
+Compiled welcome.js  (136ms)  (pid 4257)
+Compiled application.js  (319ms)  (pid 4257)
+Completed 200 OK in 2228.0ms (Views: 2227.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /foundation_and_overrides.css - 200 OK (43ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /layout.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:34 -0800
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6.6ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-05 17:05:38 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
