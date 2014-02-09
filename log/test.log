@@ -5272,3 +5272,203 @@ Processing by PostsController#index as HTML
   Rendered posts/index.html.erb within layouts/application (1.4ms)
 Completed 200 OK in 3.4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
   [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-08 19:36:17', '2014-02-08 19:36:17', 822229645)[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/posts/new" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.2ms)
+  Rendered posts/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 22.2ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Code Rails", "body"=>"this is the body"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (17.2ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "this is the body"], ["created_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00], ["title", "Code Rails"], ["updated_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 21.5ms (ActiveRecord: 17.3ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24.9ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34.3ms (Views: 33.4ms | ActiveRecord: 0.1ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started DELETE "/posts/822229645" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"822229645"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229645"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 822229645]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts
+Completed 302 Found in 3.2ms (ActiveRecord: 0.9ms)
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3.2ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2.7ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Started GET "/posts/822229646/edit" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6.4ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+Started PUT "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Becoming a Web Developer", "body"=>"\nMeans striving for excellence."}, "commit"=>"Update Post", "id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "posts" SET "title" = 'Becoming a Web Developer', "body" = '
+Means striving for excellence.', "updated_at" = '2014-02-08 19:36:18.330458' WHERE "posts"."id" = 822229646
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 3.7ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2.8ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:36:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:36:18 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3.8ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-08 19:37:02', '2014-02-08 19:37:02', 822229645)[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/posts/new" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (6.9ms)
+  Rendered posts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 22.3ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Code Rails", "body"=>"this is the body"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "this is the body"], ["created_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00], ["title", "Code Rails"], ["updated_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4.0ms (ActiveRecord: 1.1ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.8ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 4.6ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started DELETE "/posts/822229645" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"822229645"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229645"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 822229645]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts
+Completed 302 Found in 3.3ms (ActiveRecord: 1.2ms)
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2.9ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3.0ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started GET "/posts/822229646/edit" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5.7ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+Started PUT "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Becoming a Web Developer", "body"=>"\nMeans striving for excellence."}, "commit"=>"Update Post", "id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "posts" SET "title" = 'Becoming a Web Developer', "body" = '
+Means striving for excellence.', "updated_at" = '2014-02-08 19:37:02.734345' WHERE "posts"."id" = 822229646
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 3.9ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2.8ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Means striving for excellence."], ["created_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 08 Feb 2014 19:37:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/posts" for 127.0.0.1 at 2014-02-08 11:37:02 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3.5ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
