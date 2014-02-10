@@ -22851,3 +22851,276 @@ Connecting to database specified by database.yml
   [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
   [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30.5ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:04 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7.0ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:11 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7.7ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:14 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6.9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-10 09:10:21 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9.6ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:21 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /vendor/modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 09:10:22 -0800
+Served asset /application.js - 304 Not Modified (0ms)
