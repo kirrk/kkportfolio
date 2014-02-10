@@ -22718,3 +22718,136 @@ Served asset /welcome.js - 304 Not Modified (0ms)
 Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 13:41:05 -0800
 Served asset /application.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20140127004151)
+Migrating to CreateProjects (20140209030053)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (22.9ms)[0m  [1mCREATE TABLE "projects" ("id" serial primary key, "name" character varying(255), "technologies_used" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140209030053')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 53.5ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /layout.css - 200 OK (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /welcome.css - 200 OK (0ms)
+
+
+Started GET "/dev-assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /vendor/modernizr.js - 200 OK (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /posts.js - 200 OK (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /welcome.js - 200 OK (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-09 20:34:43 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/project/index" for 127.0.0.1 at 2014-02-09 20:34:56 -0800
+
+ActionController::RoutingError (No route matches [GET] "/project/index"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-09 20:35:27 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (880.2ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mEXPLAIN (0.5ms)[0m  [1mEXPLAIN SELECT "projects".* FROM "projects" [0m
+EXPLAIN for: SELECT "projects".* FROM "projects" 
+                         QUERY PLAN
+-------------------------------------------------------------
+ Seq Scan on projects  (cost=0.00..10.70 rows=70 width=1052)
+(1 row)
+
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 895.2ms (Views: 10.4ms | ActiveRecord: 882.5ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-09 20:35:33 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14.5ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
