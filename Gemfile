@@ -9,6 +9,8 @@ gem "bundler"
 
 gem "pg"
 
+gem "strong_parameters"
+
 gem "minitest-rails"
 
 group :test do
@@ -27,6 +29,8 @@ end
   # gem 'therubyracer', :platforms => :ruby
 group :development do
   gem "sqlite3"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :doc do
