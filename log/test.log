@@ -10165,3 +10165,308 @@ Processing by PostsController#index as HTML
   Rendered posts/index.html.erb within layouts/application (1.4ms)
 Completed 200 OK in 3.2ms (Views: 2.6ms | ActiveRecord: 0.1ms)
   [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:44:04', '2014-02-15 03:44:04', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:44:04', '2014-02-15 03:44:04', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:44:04', '2014-02-15 03:44:04', 145475190)
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 52.8ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (113.2ms)
+  Rendered projects/new.html.erb within layouts/application (156.7ms)
+Completed 200 OK in 177.1ms (Views: 176.6ms | ActiveRecord: 0.0ms)
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 703402084]]
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"How meta", "technologies_used"=>"Ruby, Rails, Zurb"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.7ms)[0m  INSERT INTO "projects" ("created_at", "name", "technologies_used", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00], ["name", "How meta"], ["technologies_used", "Ruby, Rails, Zurb"], ["updated_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/703402085
+Completed 302 Found in 34.3ms (ActiveRecord: 29.8ms)
+Started GET "/projects/703402085" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"703402085"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "703402085"]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18.5ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.8ms)
+  Rendered projects/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3.5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Q", "technologies_used"=>""}, "commit"=>"Create Project"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered projects/_form.html.erb (3.0ms)
+  Rendered projects/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7.0ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 703402084]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 703402084]]
+Started GET "/projects/703402084/edit" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"703402084"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "703402084"]]
+  Rendered projects/_form.html.erb (3.4ms)
+  Rendered projects/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 33.7ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+Started PUT "/projects/703402084" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"My Rad Portfolio", "technologies_used"=>"\nRuby, Rails, Zurb"}, "commit"=>"Update Project", "id"=>"703402084"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "703402084"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "projects" SET "name" = 'My Rad Portfolio', "technologies_used" = '
+Ruby, Rails, Zurb', "updated_at" = '2014-02-15 03:44:04.685584' WHERE "projects"."id" = 703402084
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/703402084
+Completed 302 Found in 4.2ms (ActiveRecord: 0.5ms)
+Started GET "/projects/703402084" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"703402084"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "703402084"]]
+  Rendered projects/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2.5ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("created_at", "name", "technologies_used", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00], ["name", "How Meta"], ["technologies_used", "Ruby, Rails, Zurb"], ["updated_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4.0ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/posts/new" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (35.3ms)
+  Rendered posts/new.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 82.8ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Code Rails", "body"=>"this is the body"}, "commit"=>"Create Post"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "this is the body"], ["created_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00], ["title", "Code Rails"], ["updated_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 3.4ms (ActiveRecord: 0.5ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25.1ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Means striving for excellence."], ["created_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5.2ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started DELETE "/posts/822229645" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"822229645"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229645"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 822229645]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts
+Completed 302 Found in 3.1ms (ActiveRecord: 0.9ms)
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2.8ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Means striving for excellence."], ["created_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 15 Feb 2014 03:44:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2.6ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started GET "/posts/822229646/edit" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24.3ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+Started PUT "/posts/822229646" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"Becoming a Web Developer", "body"=>"\nMeans striving for excellence."}, "commit"=>"Update Post", "id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "posts" SET "title" = 'Becoming a Web Developer', "body" = '
+Means striving for excellence.', "updated_at" = '2014-02-15 03:44:04.984220' WHERE "posts"."id" = 822229646[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 3.4ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-02-14 19:44:04 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2.3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Means striving for excellence."], ["created_at", Sat, 15 Feb 2014 03:44:05 UTC +00:00], ["title", "Becoming a Code Fellow"], ["updated_at", Sat, 15 Feb 2014 03:44:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 19:44:05 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 4.5ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:46:28', '2014-02-15 03:46:28', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:46:28', '2014-02-15 03:46:28', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:46:28', '2014-02-15 03:46:28', 145475190)
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 703402084]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:48:17', '2014-02-15 03:48:17', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:48:17', '2014-02-15 03:48:17', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:48:17', '2014-02-15 03:48:17', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 703402084]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:50:03', '2014-02-15 03:50:03', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:50:03', '2014-02-15 03:50:03', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:50:03', '2014-02-15 03:50:03', 145475190)
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 703402084]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:51:41', '2014-02-15 03:51:41', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:51:41', '2014-02-15 03:51:41', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:51:41', '2014-02-15 03:51:41', 145475190)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 703402084]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 03:58:16', '2014-02-15 03:58:16', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 03:58:16', '2014-02-15 03:58:16', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 03:58:16', '2014-02-15 03:58:16', 145475190)
+  [1m[36m (588.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 19:58:17 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15.1ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 04:03:55', '2014-02-15 04:03:55', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 04:03:55', '2014-02-15 04:03:55', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 04:03:55', '2014-02-15 04:03:55', 145475190)
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 20:03:55 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 16.5ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+Started DELETE "/posts/822229645" for 127.0.0.1 at 2014-02-14 20:03:55 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"822229645"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229645"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 822229645]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts
+Completed 302 Found in 5.2ms (ActiveRecord: 0.7ms)
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 20:03:55 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2.3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (15.9ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'this is the body', '2014-02-15 04:13:57', '2014-02-15 04:13:57', 822229645)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb', '2014-02-15 04:13:57', '2014-02-15 04:13:57', 703402084)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-02-15 04:13:57', '2014-02-15 04:13:57', 145475190)
+  [1m[36m (449.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 20:13:57 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15.8ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+Started DELETE "/posts/822229645" for 127.0.0.1 at 2014-02-14 20:13:57 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"822229645"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229645"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 822229645]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts
+Completed 302 Found in 3.0ms (ActiveRecord: 0.4ms)
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 20:13:57 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2.0ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m

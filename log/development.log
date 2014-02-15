@@ -25727,3 +25727,2291 @@ Served asset /welcome.js - 304 Not Modified (0ms)
 
 Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 22:32:49 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 576.2ms (Views: 575.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:44 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18.2ms (Views: 9.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:57 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-02-14 17:53:58 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20.8ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 17:53:59 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-02-14 18:30:43 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31.6ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:44 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.8ms)
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 33.8ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 18:30:48 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "technologies_used" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140209030053')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140127004151')[0m
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:01:07 -0800
+Connecting to database specified by database.yml
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 218.4ms (Views: 191.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /layout.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:01:08 -0800
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8.1ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:02:15 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/projects/1" for 127.0.0.1 at 2014-02-14 20:04:43 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"1"}
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 500 Internal Server Error in 39.8ms
+
+ActionView::MissingTemplate - Missing template projects/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/ke_kirr/sites/KKPortfolio/app/views"
+  * "/usr/local/rvm/gems/ruby-2.0.0-p353/gems/foundation-rails-5.0.3.1/app/views"
+:
+  actionpack (3.2.16) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.16) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (3.2.16) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.16) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.16) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.16) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.16) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.16) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.16) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.16) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.16) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.16) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:414:in `_run__2978956548287037570__process_action__2365936289454088869__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.16) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.16) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__3637207651163777436__call__4381170152896211143__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2178779220/variables" for 127.0.0.1 at 2014-02-14 20:04:43 -0800
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24.7ms (Views: 8.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:14:12 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/projects/2" for 127.0.0.1 at 2014-02-14 20:14:16 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"2"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 2.6ms
+
+NoMethodError - undefined method `delete_all' for #<Project:0x00000101bf7f50>:
+  activemodel (3.2.16) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.16) lib/active_record/attribute_methods.rb:149:in `method_missing'
+  app/controllers/projects_controller.rb:42:in `destroy'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:414:in `_run__2978956548287037570__process_action__2365936289454088869__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.16) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.16) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__3637207651163777436__call__4381170152896211143__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2162179300/variables" for 127.0.0.1 at 2014-02-14 20:14:16 -0800
+
+
+Started DELETE "/projects/2" for 127.0.0.1 at 2014-02-14 20:15:22 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"2"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+Completed 500 Internal Server Error in 10.6ms
+
+ArgumentError - wrong number of arguments (1 for 0):
+  app/controllers/projects_controller.rb:42:in `destroy'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:414:in `_run__2978956548287037570__process_action__2365936289454088869__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.16) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.16) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__3637207651163777436__call__4381170152896211143__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2186595680/variables" for 127.0.0.1 at 2014-02-14 20:15:22 -0800
+
+
+Started DELETE "/projects/2" for 127.0.0.1 at 2014-02-14 20:15:44 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"2"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "projects" WHERE "projects"."id" = $1  [["id", 2]]
+  [1m[36m (351.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 370.7ms (ActiveRecord: 356.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8.6ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:45 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (9.3ms)
+  Rendered projects/new.html.erb within layouts/application (463.8ms)
+Completed 200 OK in 470.2ms (Views: 469.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:47 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"kk", "technologies_used"=>"test"}, "commit"=>"Create Project"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered projects/_form.html.erb (2.5ms)
+  Rendered projects/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12.1ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:15:51 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 20:15:59 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"karen", "technologies_used"=>"test"}, "commit"=>"Create Project"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "projects" ("created_at", "name", "technologies_used", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 15 Feb 2014 04:15:59 UTC +00:00], ["name", "karen"], ["technologies_used", "test"], ["updated_at", Sat, 15 Feb 2014 04:15:59 UTC +00:00]]
+  [1m[36m (563.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/3
+Completed 302 Found in 570.0ms (ActiveRecord: 565.6ms)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8.1ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:00 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7.9ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:10 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered projects/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7.4ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:11 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/3/edit" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered projects/_form.html.erb (2.1ms)
+  Rendered projects/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10.9ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:17 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/3" for 127.0.0.1 at 2014-02-14 20:16:21 -0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"karen", "technologies_used"=>"is here"}, "commit"=>"Update Project", "id"=>"3"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "projects" SET "technologies_used" = 'is here', "updated_at" = '2014-02-15 04:16:21.981125' WHERE "projects"."id" = 3
+  [1m[36m (682.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/3
+Completed 302 Found in 688.6ms (ActiveRecord: 683.7ms)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered projects/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6.7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:22 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8.9ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:28 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/projects/3" for 127.0.0.1 at 2014-02-14 20:16:31 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"3"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "projects" WHERE "projects"."id" = $1  [["id", 3]]
+  [1m[36m (895.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 898.5ms (ActiveRecord: 896.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6.5ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:16:32 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/projects/1" for 127.0.0.1 at 2014-02-14 20:16:52 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 1.8ms
+
+ActiveRecord::RecordNotFound - Couldn't find Project with id=1:
+  activerecord (3.2.16) lib/active_record/relation/finder_methods.rb:344:in `find_one'
+  activerecord (3.2.16) lib/active_record/relation/finder_methods.rb:315:in `find_with_ids'
+  activerecord (3.2.16) lib/active_record/relation/finder_methods.rb:107:in `find'
+  activerecord (3.2.16) lib/active_record/querying.rb:5:in `find'
+  app/controllers/projects_controller.rb:41:in `destroy'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:414:in `_run__2978956548287037570__process_action__2365936289454088869__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.16) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.16) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__3637207651163777436__call__4381170152896211143__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2179758600/variables" for 127.0.0.1 at 2014-02-14 20:16:52 -0800
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6.9ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:01 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7.9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:03 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"kk", "technologies_used"=>"rails, jquery, javascript, php"}, "commit"=>"Create Project"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11.2ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:13 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"helen", "technologies_used"=>"rails, jquery, javascript, php"}, "commit"=>"Create Project"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("created_at", "name", "technologies_used", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 15 Feb 2014 04:17:18 UTC +00:00], ["name", "helen"], ["technologies_used", "rails, jquery, javascript, php"], ["updated_at", Sat, 15 Feb 2014 04:17:18 UTC +00:00]]
+  [1m[36m (116.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 120.9ms (ActiveRecord: 116.7ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.6ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7.6ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:18 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:21 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8.7ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:17:23 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7.0ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:36 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/4/edit" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8.4ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:39 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/4" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"helen", "technologies_used"=>"rails, jquery, javascript, php"}, "commit"=>"Update Project", "id"=>"4"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 2.9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.2ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:21:41 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7.3ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:24 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/4/edit" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered projects/_form.html.erb (1.7ms)
+  Rendered projects/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8.7ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:25 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/4" for 127.0.0.1 at 2014-02-14 20:28:30 -0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOq1vqixeB6wJwUUG1ehs6u1mE82+AI9/dQcmPtQCE=", "project"=>{"name"=>"helen", "technologies_used"=>"rails, jquery, heloo\r\n, php"}, "commit"=>"Update Project", "id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "projects" SET "technologies_used" = 'rails, jquery, heloo
+, php', "updated_at" = '2014-02-15 04:28:30.907422' WHERE "projects"."id" = 4[0m
+  [1m[35m (245.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 271.3ms (ActiveRecord: 246.3ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46.5ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:31 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6.9ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:38 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered projects/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5.8ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:40 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-02-14 20:28:44 -0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.7ms)
+  Rendered projects/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7.6ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:45 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" 
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17.0ms (Views: 8.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:49 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7.9ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dev-assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/layout.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/posts.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/dev-assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 20:28:56 -0800
+Served asset /application.js - 304 Not Modified (0ms)
