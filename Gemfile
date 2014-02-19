@@ -49,6 +49,7 @@ gem 'zurb-foundation'
 
 gem 'foundation-rails'
 
+gem 'devise'
 
 
 

@@ -4,8 +4,8 @@ feature "Editing a Post" do
   scenario "Edit a form's data" do
 
     #Given an exiting post
-    post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
-    visit post_path(post)
+   # post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
+    visit post_path(post(:cr))
 
     #When I click edit and submit changed data
     click_on "Edit"

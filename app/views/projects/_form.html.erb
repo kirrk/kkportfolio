@@ -11,15 +11,26 @@
   </div>
   <% end %>
 
-  <div class="field">
+   <div class="row">
+    <div class="small-8">
+      <div class="small-4 columns">
     <%= f.label :name %><br />
+   </div>
+     <div class="small-8 columns">
     <%= f.text_field :name %>
+    </div>
   </div>
 
-  <div class="field">
+
+  <div class="row">
+    <div class="small-8">
+      <div class="small-4 columns">
     <%= f.label :technologies_used %><br />
+     </div>
+     <div class="small-8 columns">
     <%= f.text_area :technologies_used %>
   </div>
+ </div>
 
   <div class="actions">
     <%= f.submit %>

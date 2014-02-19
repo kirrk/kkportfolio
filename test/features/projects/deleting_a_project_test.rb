@@ -3,13 +3,13 @@ require "test_helper"
         scenario "delete an existing project" do
 
     #Given an existing project
-    visit posts_path
+    visit projects_path
 
     #When I want to delete a project
     click_on "Destroy"
 
     #Then the projects should be deleted
-    page.text.must_include "Deleted"
+    page.text.must_include "deleted."
 
     end
 end

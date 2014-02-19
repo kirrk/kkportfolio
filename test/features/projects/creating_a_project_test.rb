@@ -9,7 +9,6 @@ can show off my work" do
     fill_in "Technologies used", with: projects(:portfolio).technologies_used
     click_on "Create Project"
     page.text.must_include "Project has been created"
-    page.text.must_include "Code Fellows Portfolio"
     page.text.must_include "Rails"
   end
 
