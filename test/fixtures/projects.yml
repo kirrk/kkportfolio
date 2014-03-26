@@ -1,10 +1,10 @@
 portfolio:
   name: How meta
-  technologies_used: Ruby, Rails, Zurb
+  technologies_used: "Ruby, Rails, Zurb"
 
 freelance:
   name: Barnyard Cereal
-  technologies_used: Ruby, Rails, Farmville API, Automilker
+  technologies_used: "Ruby, Rails, Farmville API, Automilker"
 
 
 

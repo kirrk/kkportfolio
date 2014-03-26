@@ -2,4 +2,6 @@ cr:
   title: Code Rails
   body: this is the body
   author: UserPerson
+  published: true
+
 

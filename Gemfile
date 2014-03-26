@@ -51,7 +51,9 @@ gem 'foundation-rails'
 
 gem 'devise'
 
+gem 'pundit'
 
+gem 'simplecov', :require => false, :group => :test
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
