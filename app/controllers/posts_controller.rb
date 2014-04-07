@@ -16,29 +16,25 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
+    authorize @post
   end
 
   # GET /posts/1/edit
   def edit
+    authorize @post
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @post.author = current_user
-
     authorize @post
+    current_user.posts << @post
 
-if @post.create(post_params)
-    redirect_to @post
-  else
-    render :edit
-  end
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @post }
+      respond_to do |format|
+  if @post.save
+      format.html { redirect_to @post, notice: 'Post was successfully created.' }
+      format.json { render action: 'show', status: :created, location: @post }
       else
         format.html { render action: 'new' }
         format.json { render json: @post.errors, status: :unprocessable_entity }
@@ -50,9 +46,7 @@ if @post.create(post_params)
   # PUT /posts/1.json
   def update
 
-  authorize @post
-
-
+    authorize @post
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
@@ -78,7 +72,7 @@ if @post.create(post_params)
     end
   end
 
-    private
+  private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
