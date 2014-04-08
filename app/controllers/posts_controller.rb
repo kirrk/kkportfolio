@@ -16,7 +16,6 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-    authorize @post
   end
 
   # GET /posts/1/edit

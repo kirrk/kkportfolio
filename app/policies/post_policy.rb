@@ -1,14 +1,14 @@
 class PostPolicy < ApplicationPolicy
 
-  class Scope < Struct.new(:user, :scope)
-    def resolve
-       if user
-        return scope.where(author_id: user.id) if user.author?
-        return scope.all if user.author?
-      end
-        scope.where(:published => true)
-    end
-  end
+   class Scope < Struct.new(:user, :scope)
+     def resolve
+        if user
+         return scope.where(author_id: user.id) if user.author?
+         return scope.all if user.author?
+       end
+         scope.where(:published => true)
+     end
+   end
 
     attr_accessor :user, :post
     def initialize(user, post)
@@ -16,12 +16,10 @@ class PostPolicy < ApplicationPolicy
       @post = post
     end
 
-    def update?
-      @post.author == @user || @user.editor?
-    end
+
 
     def create?
-      @user.author? || @user.editor?
+      @user.author? || @user.editor? || @user.twitter?
     end
 
     def publish?

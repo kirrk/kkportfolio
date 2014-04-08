@@ -22,7 +22,7 @@ scenario "sign up" do
 
 scenario "sign in with twitter works" do
    visit root_path
-   click_on "Sign In"
+   click_on "Sign in"
    OmniAuth.config.test_mode = true
    Capybara.current_session.driver.request.env['devise.mapping'] = Devise.mappings[:user]
    Capybara.current_session.driver.request.env['omniauth.auth'] = OmniAuth.config.mock_auth[:twitter]

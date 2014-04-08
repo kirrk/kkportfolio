@@ -23,4 +23,7 @@ class CommentPolicy
     @user.editor || @user.author
   end
 
+  def approved?
+    @user.editor? || @user.author?
+  end
 end

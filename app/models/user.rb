@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :omniauthable,
          :recoverable, :rememberable, :trackable, :validatable
   # attr_accessible :title, :body
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :role
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :role, :provider, :uid, :name
 
    has_many :posts, foreign_key: "author_id"
 
@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
       user.provider = auth.provider
       user.uid = auth.uid
       user.name = auth.info.nickname
-      user.email = "#{user.name}@twitter.example.com"
+      user.email = "#{user.name}-CHANGEME@twitter.example.com"
     end
   end
 
