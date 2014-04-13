@@ -12,52 +12,17 @@
     <%= @post.author.email %></strong>
     <br /><br />
 
-  <h2>Comments:</h2>
-      <% @post.comments.each do |comment| %>
-    <p><b>Commenter email:</b>
-      <%= comment.author_email %>
-    </p>
-    <p><b>Comment:</b>
-      <%= comment.content %>
-    </p>
-    <p>
-      <%= link_to 'Destroy Comment', [comment.post, comment],
-      :confirm => 'Are you sure?',
-      :method => :delete %>
-      <% end %>
-      Please fill out the form below to add a comment.
-      <%= form_for([@post, @post.comments.build]) do |f| %>
+  <hr>
 
-<div class="field">
-      <%= f.label :author_email, :class => 'left'%>
-      <%= f.text_field :author_email %>
-    <div class="field">
-      <%= f.label :content, :class => 'left' %>
-      <%= f.text_area :content %>
-    </div>
-
-  <% if current_user.role == "editor" || current_user.role == "author" %>
-    <div class="row collapse">
-      <div class="small-2 columns">
-        <%= f.label :approved, class: "right inline", title: "Is this comment published?", data: {tooltip: true } %><br>
-
-      </div>
-        <%= f.check_box :approved %>
-    </div>
-  <% end %>
-
-  <div class="actions">
-      <%= f.submit %>
-  </div>
-</div>
+<% if policy(@post).update? %>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
 <% end %>
 
-      <p id="status"><b>Status: </b><%= @post.published? ? "Published" : "Unpublished" %></p>
-    </div>
-</div>
+<%= render "comments/form" %>
+
+
 
 <footer class="row">
-  <%= link_to 'Edit', edit_post_path(@post) %> |
-  <%= link_to 'Back', posts_path %>
+  <%= link_to 'Back to blog', posts_path %>
 </footer>
 

@@ -1,0 +1,14 @@
+karen_comment:
+  author: karen
+  author_url: http://troll.example.com
+  author_email: karen@troll.example.com
+  content: you are an author
+  commentable: social_network
+  commentable_type: project
+
+laurens_comment:
+  author: lauren
+  author_url: http://lauren.example.com
+  author_email: lauren@troll.example.com
+  content: you are an author too
+  commentable: google is cray post

@@ -1,6 +1,6 @@
 Portfolio::Application.routes.draw do
 
-
+  resources :users
 
   devise_for :users,
   controllers: { omniauth_callbacks: "omniauth_callbacks" }
@@ -8,7 +8,10 @@ Portfolio::Application.routes.draw do
   resources :posts do
     resources :comments
   end
-  resources :projects
+
+  resources :projects do
+    resources :comments
+  end
 
   get "welcome/index"
 

@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   validates :body, :presence => true
   validates :title, :presence => true
 
-  has_many :comments
+  has_many :comments, as: :commentable
 
   def publish!
     published = true
