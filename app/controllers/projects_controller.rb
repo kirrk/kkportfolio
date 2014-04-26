@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_filter :set_project, only: [:show, :edit, :update, :destroy]
   def index
     @projects = Project.all
   end
@@ -9,22 +10,32 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @project.save
-      flash[:notice] = "Project has been created."
-      redirect_to @project
-  else
-      flash.now[:error] = "Project could not be saved"
-      render :new
-  end
-
-
-    def show
-      @project =  Project.find(params[:id])
+     respond_to do |format|
+          format.html do
+            if @project.save
+              flash[:notice] = "Project has been created."
+              redirect_to @project
+            else
+              flash[:alert] = "Project has not been created."
+              render :action => "new"
+            end
+          end
+          format.js do
+            unless @project.save
+              render text: @project.errors.full_messages.join,
+               status: :unprocessable_entity
+            end
+        end
     end
   end
 
-   def edit
-      @project = Project.find(params[:id])
+  def show
+    @commentable = @project
+    @comments = @commentable.comments
+    @comment = Comment.new
+  end
+
+  def edit
   end
 
   def update
@@ -55,6 +66,7 @@ class ProjectsController < ApplicationController
   private
 
   def set_project
+    @project = Project.find(params[:id])
 
   end
 end

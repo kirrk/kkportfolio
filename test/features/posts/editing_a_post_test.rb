@@ -8,7 +8,7 @@ feature "Editing a Post" do
     visit post_path(posts(:cr))
 
     #When I click edit and submit changed data
-    click_on "Edit"
+    click_on "Edit Post"
     fill_in "Title", with: "Becoming a Web Developer"
     click_on "Update Post"
 

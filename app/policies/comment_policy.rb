@@ -1,29 +1,19 @@
-class CommentPolicy
+class CommentPolicy < ApplicationPolicy
 
-  attr_accessor :user, :comment
+  attr_reader :user, :comment
 
   def initialize(user, comment)
     @user = user
     @comment = comment
   end
 
-  def update?
-      @post.author == @user || @user.editor?
+  def index?
+    user.editor? if user
   end
 
-  def create?
-      @user.author? || @user.editor?
-  end
-
-  def publish?
-      @user.editor? || @user.author?
-  end
-
-  def destroy?
-    @user.editor || @user.author
-  end
-
-  def approved?
-    @user.editor? || @user.author?
+  Scope = Struct.new(:user, :scope)  do
+    def resolve
+      scope.all
+    end
   end
 end

@@ -16,11 +16,14 @@ class PostPolicy < ApplicationPolicy
       @post = post
     end
 
-
-
     def create?
       @user.author? || @user.editor? || @user.twitter?
     end
+
+    def update?
+      user.editor? if user.present?
+    end
+    alias_method :destroy?, :update?
 
     def publish?
       @user.editor? || @user.author?

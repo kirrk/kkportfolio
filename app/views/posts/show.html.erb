@@ -2,27 +2,26 @@
 <div id="show-form">
   <div class="row">
     <div class="small-8 columns">
+      <div class="field">
+
   <h2>Title:</h2>
     <%= @post.title %>
-
+  </div>
   <h2>Body:</h2>
     <%= @post.body %>
-    <br />
-    <strong>By:
+    <br /><br />
+    <strong>Authored By:
     <%= @post.author.email %></strong>
     <br /><br />
-
-  <hr>
-
 <% if policy(@post).update? %>
-  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Edit Post', edit_post_path(@post) %>
 <% end %>
-
+ <br /><br />
 <%= render "comments/form" %>
 
 
 
-<footer class="row">
+<footer class="row" style="clear:left; margin: 1em 0 1em; padding: 1em;">
   <%= link_to 'Back to blog', posts_path %>
 </footer>
 

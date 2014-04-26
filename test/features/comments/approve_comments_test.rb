@@ -4,15 +4,6 @@ require "test_helper"
 feature "As an author or editor I want to approve comments so that
 my blog does not have spam comments" do
 
-  before do
-    visit post_path(posts(:published))
-    fill_in :comment_author,        with: "troll one"
-    fill_in :comment_author_url,    with: "http://trollsite.example.com"
-    fill_in :comment_author_email,  with: "troll@exampple.com"
-    fill_in :comment_content,       with: "a bad comment"
-    click_on "submit comment for approval"
-  end
-
 
 scenario "comments do not display until approved" do
     # given a published post (in fixtures)

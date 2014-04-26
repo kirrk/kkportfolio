@@ -1,6 +1,13 @@
 <h2><%= notice %></h2>
+ <div class="row">
+    <div class="small-8 columns">
+      <div class="field">
   <p>Technologies used: <%= @project.technologies_used %>
+<%= render "comments/form" %>
 
-
+<br class="clear" />
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
+    </div>
+  </div>
+</div>

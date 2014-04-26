@@ -1,5 +1,7 @@
-karen_comment:
-  author: karen_comment
-  author_url: http://troll.example.com
-  author_email: karen@troll.example.com
+cr:
+  title: Code Rails
+  body: this is the body
+  author: UserPerson
+  published: true
+
 

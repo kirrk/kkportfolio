@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-  attr_accessible :author, :approved, :author_email, :author_url, :content, :referrer, :user_agent, :user_ip
+  attr_accessible :author, :approved, :author_email, :author_url, :content, :referrer, :user_agent, :user_ip, :commentable_id
   belongs_to :commentable, polymorphic: true
   validates :content, presence: true
   validates :author_email, presence: true
