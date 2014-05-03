@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :role, :provider, :uid, :name
 
    has_many :posts, foreign_key: "author_id"
+   has_many :projects, foreign_key: "author_id"
 
   def author?
     role == 'author'

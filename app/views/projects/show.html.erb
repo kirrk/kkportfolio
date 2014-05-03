@@ -2,7 +2,8 @@
  <div class="row">
     <div class="small-8 columns">
       <div class="field">
-  <p>Technologies used: <%= @project.technologies_used %>
+  <p>Technologies used: <%= @project.technologies_used %></p>
+    <p>By: <%= @project.author.name %></p>
 <%= render "comments/form" %>
 
 <br class="clear" />

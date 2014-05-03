@@ -1,3 +1,9 @@
-$('#new_project').remove();
+<% if @project.persisted? %>
+$('<%= j "form" %>').hide();
 $('#new_link').show();
-$('ul').append('<%= j render(@project) %>');
+$('#project_errors').html('');
+$('#projects').append('<%=j render(@project) %>');
+
+<% else %>
+('#project_errors').html('<%=j @project.errors.full_messages.join('<br />').html_safe %>');
+<% end %>

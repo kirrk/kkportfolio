@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
   before_filter :set_project, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
+
   def index
     @projects = Project.all
   end
@@ -10,23 +12,8 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-     respond_to do |format|
-          format.html do
-            if @project.save
-              flash[:notice] = "Project has been created."
-              redirect_to @project
-            else
-              flash[:alert] = "Project has not been created."
-              render :action => "new"
-            end
-          end
-          format.js do
-            unless @project.save
-              render text: @project.errors.full_messages.join,
-               status: :unprocessable_entity
-            end
-        end
-    end
+    @project.author = current_user
+    @project.save
   end
 
   def show
