@@ -65,6 +65,10 @@ gem 'simplecov', :require => false, :group => :test
 
 gem 'figaro'
 
+gem 'fog'
+
+gem 'carrierwave'
+
 # Use unicorn as the app server
 gem 'unicorn'
 

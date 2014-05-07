@@ -33,6 +33,11 @@
     </div>
 </div>
 
+<div class="field">
+  <%= f.label :image %><br>
+  <%= f.file_field :image %>
+</div>
+
  <p id="status">
   <% if current_user.role == "editor" %>
     <div class="row collapse">

@@ -82,7 +82,7 @@ class PostsController < ApplicationController
     end
 
   def post_params
-          params.require(:post).permit(:title, :body, (:published if current_user.role == "editor"))
+          params.require(:post).permit(:title, :body, :image, (:published if current_user.role == "editor"))
 
       end
   end
