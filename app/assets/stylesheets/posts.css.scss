@@ -2,6 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$label-color: #662d91;
+
 h1.posts-new {
   margin: 10px 0 10px 180px;
+}
+h2 {
+  font-size: 2em;
+  color: #662d91;
+}
+h3 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.5em;
+}
+textarea {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+div#show-form {
+  margin: 1em 0 0 5em !important;
+}
+label {
+  min-width: 150px;
+  color: $label-color;
+  margin: .7em 0 .7em;
+}
+form.new_comment input {
+  margin: 0;
+}
+input[type="email"] {
+  width: 300px;
+}
+input[type="password"] {
+  width: 300px;
+}
+.sign-in-contain {
+  margin: 0 0 0 5em;
+}
+.sign-in-contain input[type="submit"] {
+  margin: 1em 0 1em 0;
 }

@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  before_filter :set_project, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
+
   def index
     @projects = Project.all
   end
@@ -9,22 +12,17 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @project.save
-      flash[:notice] = "Project has been created."
-      redirect_to @project
-  else
-      flash.now[:error] = "Project could not be saved"
-      render :new
+    @project.author = current_user
+    @project.save
   end
 
-
-    def show
-      @project =  Project.find(params[:id])
-    end
+  def show
+    @commentable = @project
+    @comments = @commentable.comments
+    @comment = Comment.new
   end
 
-   def edit
-      @project = Project.find(params[:id])
+  def edit
   end
 
   def update
@@ -55,6 +53,7 @@ class ProjectsController < ApplicationController
   private
 
   def set_project
+    @project = Project.find(params[:id])
 
   end
 end
