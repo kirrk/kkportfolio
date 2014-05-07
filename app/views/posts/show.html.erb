@@ -20,6 +20,10 @@
 <%= render "comments/form" %>
 
 
+<p>
+<%= image_tag @post.image_url.to_s %>
+</p>
+
 
 <footer class="row" style="clear:left; margin: 1em 0 1em; padding: 1em;">
   <%= link_to 'Back to blog', posts_path %>
