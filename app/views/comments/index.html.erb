@@ -1,0 +1,38 @@
+<h2>Comments</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>URL</th>
+      <th>Email</th>
+      <th>Referrer</th>
+      <th>Approved</th>
+    </tr>
+  </thead>
+  <% @comments.each do |comment| %>
+    <tr <%= raw 'class="warning"' unless comment.approved? %> id="<%= dom_id(comment) %>">
+      <td><%= comment.author%></td>
+      <td><%= comment.author_url %></td>
+      <td><%= comment.author_email %></td>
+      <td><%= comment.referrer %></td>
+      <td><%= link_to 'Edit', edit_comment_path(comment), class: "btn btn-info" %></td>
+      <td>
+        <% if comment.approved? %>
+          Approved
+        <% else %>
+          <%= button_to 'Approve',
+            comment_path(comment, comment: { approved: true }),
+            method: :put, class: "btn btn-warning" %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } ,
+        class: "btn btn-danger" %>
+      </td>
+    </tr>
+    <tr>
+      <td class="comment_content" colspan="7"><%= comment.content %></td>
+    </tr>
+    <% end %>
+</table>

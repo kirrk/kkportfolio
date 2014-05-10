@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140318033906) do
+ActiveRecord::Schema.define(:version => 20140506030313) do
+
+  create_table "comments", :force => true do |t|
+    t.string   "author_url"
+    t.string   "author_email"
+    t.string   "user_ip"
+    t.string   "user_agent"
+    t.string   "referrer"
+    t.text     "content"
+    t.boolean  "approved"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.string   "author"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -20,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20140318033906) do
     t.datetime "updated_at", :null => false
     t.integer  "author_id"
     t.boolean  "published"
+    t.string   "image"
   end
 
   create_table "projects", :force => true do |t|
@@ -27,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20140318033906) do
     t.string   "technologies_used"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.integer  "author_id"
   end
 
   create_table "users", :force => true do |t|
@@ -43,6 +60,9 @@ ActiveRecord::Schema.define(:version => 20140318033906) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "role"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -13,6 +13,8 @@ gem "strong_parameters"
 
 gem "minitest-rails"
 
+gem "omniauth-twitter"
+
 group :test do
   gem "minitest-rails-capybara"
   gem "launchy"
@@ -61,8 +63,16 @@ gem 'simplecov', :require => false, :group => :test
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
+gem 'figaro'
+
+gem 'fog'
+
+gem 'carrierwave'
+
 # Use unicorn as the app server
- gem 'unicorn'
+gem 'unicorn'
+
+gem 'pry'
 
 # Deploy with Capistrano
 # gem 'capistrano'
