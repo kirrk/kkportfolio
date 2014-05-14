@@ -74,6 +74,8 @@ gem 'unicorn'
 
 gem 'pry'
 
+gem 'postmark-mitt'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
