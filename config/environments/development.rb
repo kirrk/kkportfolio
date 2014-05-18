@@ -38,5 +38,8 @@ Portfolio::Application.configure do
   config.assets.prefix = "/dev-assets"
 
   #devise
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+#  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  #add letter opener
+  config.action_mailer.delivery_method = :letter_opener
+
 end
