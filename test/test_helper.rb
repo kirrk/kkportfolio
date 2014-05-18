@@ -6,6 +6,7 @@ require "rails/test_help"
 require "minitest/rails"
 require "minitest/rails/capybara"
 require 'coveralls'
+
 Coveralls.wear!
 
 # To add Capybara feature tests add `gem "minitest-rails-capybara"`
