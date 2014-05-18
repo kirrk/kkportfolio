@@ -35,6 +35,7 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem "letter_opener"
+  gem "puma"
 end
 
 group :doc do
@@ -46,7 +47,10 @@ group :production do
 #  gem "pg"
 end
 
+
 gem 'sidekiq'
+
+gem 'foreman'
 
 gem 'sinatra', require: false
 
