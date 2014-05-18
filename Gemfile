@@ -20,6 +20,7 @@ group :test do
   gem "launchy"
 end
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 #group :assets do
@@ -33,6 +34,7 @@ group :development do
   gem "sqlite3"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "letter_opener"
 end
 
 group :doc do
@@ -73,6 +75,8 @@ gem 'carrierwave'
 gem 'unicorn'
 
 gem 'pry'
+
+gem 'postmark-mitt'
 
 # Deploy with Capistrano
 # gem 'capistrano'
