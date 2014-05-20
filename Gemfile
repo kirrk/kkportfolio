@@ -44,7 +44,7 @@ end
 
 group :production do
   gem "rails_12factor"
-#  gem "pg"
+  gem "pg"
 end
 
 gem 'coveralls', require: false
