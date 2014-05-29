@@ -20,6 +20,7 @@ group :test do
   gem "launchy"
 end
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 #group :assets do
@@ -33,6 +34,8 @@ group :development do
   gem "sqlite3"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "letter_opener"
+  gem "puma"
 end
 
 group :doc do
@@ -41,9 +44,18 @@ end
 
 group :production do
   gem "rails_12factor"
-#  gem "pg"
+  gem "pg"
 end
 
+gem 'coveralls', require: false
+
+gem 'sidekiq'
+
+gem 'foreman'
+
+gem 'sinatra', require: false
+
+gem 'slim'
 
 gem 'jquery-rails'
 
@@ -57,12 +69,6 @@ gem 'pundit'
 
 gem 'simplecov', :require => false, :group => :test
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
 gem 'figaro'
 
 gem 'fog'
@@ -73,6 +79,8 @@ gem 'carrierwave'
 gem 'unicorn'
 
 gem 'pry'
+
+gem 'postmark-mitt'
 
 # Deploy with Capistrano
 # gem 'capistrano'
